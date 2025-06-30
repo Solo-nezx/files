@@ -31,3 +31,13 @@ const Header = () => {
             </div>
             <div className="flex-shrink-0 flex items-center dimensions-logo">
               <img src={logo} alt="Dimensions Logo" />
+            </div>
+          </div>
+          {/* Add the rest of your header content here, e.g., navigation, profile, etc. */}
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
