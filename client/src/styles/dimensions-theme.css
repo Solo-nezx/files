@@ -1,0 +1,146 @@
+:root {
+  /* Primary brand colors based on the Dimensions logo */
+  --dimensions-blue: #445872; /* The navy blue color from the logo */
+  --dimensions-light-blue: #6e7e95;
+  --dimensions-dark-blue: #2c3e50;
+  --dimensions-gray: #f2f2f2;
+  --dimensions-light-gray: #fafafa;
+  --dimensions-white: #ffffff;
+  
+  /* Accent colors */
+  --dimensions-accent: #1a75ff;
+  --dimensions-success: #27ae60;
+  --dimensions-warning: #f39c12;
+  --dimensions-error: #e74c3c;
+}
+
+/* Apply brand colors to Tailwind theme */
+.bg-dimensions-primary {
+  background-color: var(--dimensions-blue);
+}
+
+.bg-dimensions-secondary {
+  background-color: var(--dimensions-light-blue);
+}
+
+.text-dimensions-primary {
+  color: var(--dimensions-blue);
+}
+
+.text-dimensions-secondary {
+  color: var(--dimensions-light-blue);
+}
+
+.border-dimensions-primary {
+  border-color: var(--dimensions-blue);
+}
+
+/* Custom button styles */
+.btn-dimensions-primary {
+  background-color: var(--dimensions-blue);
+  color: var(--dimensions-white);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-dimensions-primary:hover {
+  background-color: var(--dimensions-dark-blue);
+}
+
+/* Logo container styles */
+.dimensions-logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.dimensions-logo img {
+  height: 100%;
+  width: auto;
+}
+
+/* Custom card styles */
+.dimensions-card {
+  background-color: var(--dimensions-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+/* Custom form controls */
+.dimensions-input {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.dimensions-input:focus {
+  outline: none;
+  border-color: var(--dimensions-blue);
+  box-shadow: 0 0 0 3px rgba(68, 88, 114, 0.1);
+}
+
+/* Custom sidebar navigation */
+.dimensions-sidebar {
+  background-color: var(--dimensions-blue);
+  color: var(--dimensions-white);
+  width: 250px;
+  height: 100vh;
+}
+
+.dimensions-sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.2s;
+}
+
+.dimensions-sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--dimensions-white);
+}
+
+.dimensions-sidebar-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--dimensions-white);
+  border-left: 3px solid var(--dimensions-white);
+}
+
+/* Custom table styles */
+.dimensions-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.dimensions-table th {
+  background-color: var(--dimensions-light-gray);
+  color: var(--dimensions-dark-blue);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--dimensions-blue);
+}
+
+.dimensions-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dimensions-table tbody tr:hover {
+  background-color: rgba(68, 88, 114, 0.05);
+}
+
+/* Custom chart container */
+.dimensions-chart-container {
+  background-color: var(--dimensions-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
